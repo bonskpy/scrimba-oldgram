@@ -1,14 +1,13 @@
-html, body {
+html, body, header, main, footer, div, p {
     margin: 0;
     padding: 0;
-    background: whitesmoke;
+    border: 1px solid gray;
 }
 
 .container {
     margin: 0 auto;
     width: 375px;
     background: white;
-    /* border: 2px solid brown */
 }
 
 header {
@@ -19,8 +18,10 @@ header {
     height: 67px;
 }
 
-.comments {
-    padding: 20px 10px;
+.user-pic {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 
 .op-section {
@@ -31,18 +32,27 @@ header {
 
 .op-details {
     margin: 0 10px;
-} 
+}
 
-.user-pic {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    height: 115px;
+}
+
+.icons {
+    display: inline;
 }
 
 .reaction-icon {
     height: 22px;
+    margin-right: 10px;
 }
 
-p {
-    margin: 0;
+
+
+.weight-700 {
+    font-weight: 700;
 }

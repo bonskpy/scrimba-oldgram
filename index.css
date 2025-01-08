@@ -1,10 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
+    background: whitesmoke;
 }
 
 .container {
+    margin: 0 auto;
     width: 375px;
+    background: white;
+    /* border: 2px solid brown */
 }
 
 header {
@@ -15,17 +19,30 @@ header {
     height: 67px;
 }
 
-.op-section {
-    padding: 15px 15px;
+.comments {
+    padding: 20px 10px;
 }
 
-.main-logo {
-    /* width: 127px;
-    height: 33px; */
+.op-section {
+    display: flex;
+    padding: 15px 10px;
+    border-top: 1px solid #C6C6C6;
 }
+
+.op-details {
+    margin: 0 10px;
+} 
 
 .user-pic {
     height: 35px;
     width: 35px;
     border-radius: 50%;
+}
+
+.reaction-icon {
+    height: 22px;
+}
+
+p {
+    margin: 0;
 }

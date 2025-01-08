@@ -3,3 +3,29 @@ html, body {
     padding: 0;
 }
 
+.container {
+    width: 375px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    height: 67px;
+}
+
+.op-section {
+    padding: 15px 15px;
+}
+
+.main-logo {
+    /* width: 127px;
+    height: 33px; */
+}
+
+.user-pic {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}

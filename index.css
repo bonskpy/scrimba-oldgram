@@ -1,7 +1,11 @@
 html, body, header, main, footer, div, p {
     margin: 0;
     padding: 0;
-    border: 1px solid gray;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Source Sans", "Roboto", sans-serif;
 }
 
 .container {
@@ -34,7 +38,6 @@ header {
 }
 
 .main-logo {
-    height: 35px;
     width: 130px;
 }
 
@@ -60,7 +63,7 @@ header {
     margin-right: 10px;
 }
 
-
+/* ulitiy classes */
 
 .weight-700 {
     font-weight: 700;

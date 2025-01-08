@@ -34,7 +34,12 @@ header {
     margin: 0 10px;
 }
 
-.man-picture {
+.main-logo {
+    height: 35px;
+    width: 130px;
+}
+
+.main-picture {
     height: 375px;
     width: 375px;
 }

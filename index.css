@@ -1,70 +1,97 @@
-html, body, header, main, footer, div, p {
-    margin: 0;
-    padding: 0;
+/* author: bonskpy@gmail.com */
+
+/*layout and reset-like styling*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  line-height: 1.2;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 body {
-    background-color: whitesmoke;
-    font-family: "Source Sans", "Roboto", sans-serif;
+  background: whitesmoke;
 }
 
 .container {
-    margin: 0 auto;
-    width: 375px;
-    background: white;
+  background: white;
+  width: 375px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
+/*post content styling*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px;
-}
-
-.user-pic {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-}
-
-.op-section {
-    display: flex;
-    padding: 15px 10px;
-    border-top: 1px solid #C6C6C6;
-}
-
-.op-details {
-    margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #C6C6C6;
 }
 
 .main-logo {
-    width: 130px;
+  flex: 0 1 33%;
+  max-width: 40%;
 }
 
-.main-picture {
-    height: 375px;
-    width: 375px;
+.user-picture {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px 10px;
-    height: 115px;
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.icons {
-    display: inline;
+.user-details {
+  margin-left: 7px;
 }
 
-.reaction-icon {
-    height: 22px;
-    margin-right: 10px;
+img {
+  max-width: 100%;
 }
 
-/* ulitiy classes */
+.post-image {
+  margin-bottom: 10px
+}
 
-.weight-700 {
-    font-weight: 700;
+/*reaction icons*/
+
+.reaction-icons {
+  padding: 10px;
+}
+
+.reaction-icons img {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px; 
+}
+
+.reaction-heart:hover,
+.reaction-comment:hover,
+.reaction-dm:hover {
+  opacity: 0.6;
+}
+
+.post-body p {
+  padding: 0 10px;
+  margin-bottom: 10px;
+
+}
+
+/*utility classes*/
+
+.bolder-font {
+  font-weight: 800;
+}
+
+.smaller-font {
+  font-size: 0.9rem;
 }

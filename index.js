@@ -1,3 +1,5 @@
+const postContainer = getElementById("post-container");
+
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -26,5 +28,37 @@ const posts = [
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }
-]
+];
 
+
+
+function renderPost(postArray) {
+  postContainer.innerHTML += `
+                  <!-- user info section -->
+                <section class="user-info">
+                    <img class="user-picture" src="${posts[0].avatar} alt="${posts[0].username} profile picture">
+                    <div class="user-details">
+                        <p><span class="bolder-font">${posts[0].name}</span></p>
+                        <p class="smaller-font">${posts[0].location}</p>
+                    </div>
+                </section>
+                    
+                <!-- The figure element represents a self-contained content, and figcaption element describes the figure -->
+                <figure class="post-content">
+                    <img class="post-image" src=${posts[0].post}/>
+                
+                <!-- reactions and comments section -->
+                    <figcaption class="post-body">
+                        <div class="reaction-icons">
+                            <img class="reaction-heart" src="images\icon-heart.png"/>
+                            <img class="reaction-comment" src="images\icon-comment.png"/>
+                            <img class="reaction-dm" src="images\icon-dm.png"/>
+                        </div>
+                        <p class="like-count bolder-font">${posts[0].likes}</p>
+                        <p class="user-caption"><span class="bolder-font">${posts[0].username}</span> just took a few mushrooms lol</p>
+                    </figcaption>
+                </figure>
+  `;
+}
+
+renderPost(posts);

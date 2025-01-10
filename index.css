@@ -17,10 +17,6 @@ body {
   background: whitesmoke;
 }
 
-figure {
-  margin-bottom: 10px;
-}
-
 .container {
   background: white;
   width: 375px;
@@ -91,6 +87,12 @@ img {
 
 .post-body {
   border-bottom: 15px solid whitesmoke;
+}
+
+.single-post:hover,
+.single-post:active {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 20px #cce0de;
 }
 
 /*utility classes*/

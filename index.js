@@ -1,6 +1,3 @@
-const postContainer = document.getElementById("post-container");
-console.log(postContainer);
-
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -31,11 +28,16 @@ const posts = [
     }
 ];
 
+
 function renderPost(postsArray) {
+    
+    const postContainer = document.getElementById("post-container");
     
     for (i = 0; i < postsArray.length; i++) {
      
-        postContainer.innerHTML += `
+        postContainer.innerHTML += ` 
+                <div class="single-post">
+                
                       <!-- user info section -->
                     <section class="user-info">
                         <img class="user-picture" src=${postsArray[i].avatar} alt=${postsArray[i].username} profile picture">
@@ -50,18 +52,21 @@ function renderPost(postsArray) {
                         <img class="post-image" src=${postsArray[i].post}/>
 
                     <!-- reactions and comments section -->
-                        <figcaption class="post-body">
+                        <figcaption class="post-body number-${i}">
                             <div class="reaction-icons">
-                                <img id="heart-${postsArray[i].username}" class="reaction-heart" src="images/icon-heart.png"/>
+                                <img id="heart-${i}" class="reaction-heart" src="images/icon-heart.png"/>
                                 <img class="reaction-comment" src="images/icon-comment.png"/>
                                 <img class="reaction-dm" src="images/icon-dm.png"/>
                             </div>
                             <p class="like-count bolder-font">${postsArray[i].likes}</p>
-                            <p class="user-caption"><span class="bolder-font">${postsArray[i].username}</span> just took a few mushrooms lol</p>
+                            <p class="user-caption"><span class="bolder-font">${postsArray[i].username}</span>${postsArray[i].comment}</p>
                         </figcaption>
                     </figure>
+                <div>
                 `;      
     }
 }
 
 renderPost(posts);
+
+const heartReactionEl = document.body.querySelector("heart-");
